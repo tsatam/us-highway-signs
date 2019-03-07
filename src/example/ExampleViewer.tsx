@@ -37,7 +37,7 @@ export class ExampleViewer extends React.Component<{}, State> {
             <div className={styles.sidebar}>
                 <div className={styles.sidebarInner}>
                     <div className={styles.sidebarElement}>
-                        <span>Highway System</span>
+                        <span className={styles.signText}>HIGHWAY SYSTEM</span>
                         <select value={this.state.system} onChange={this.onChangeSystem}>
                             <option value={HighwaySystem.INTERSTATE}>Interstate</option>
                             <option value={HighwaySystem.US_HIGHWAY}>U.S. Highway</option>
@@ -47,7 +47,7 @@ export class ExampleViewer extends React.Component<{}, State> {
                     {
                         this.state.system === HighwaySystem.STATE &&
                         <div className={styles.sidebarElement}>
-                            <span>State</span>
+                            <span className={styles.signText}>STATE</span>
                             <select value={this.state.state} onChange={this.onChangeState}>
                                 <option value={undefined}>-</option>
                                 <option value={UsState.MICHIGAN}>Michigan</option>
@@ -55,7 +55,7 @@ export class ExampleViewer extends React.Component<{}, State> {
                         </div>
                     }
                     <div className={styles.sidebarElement}>
-                        <span>Route Number</span>
+                        <span className={styles.signText}>ROUTE NUMBER</span>
                         <input value={this.state.routeNumber} onChange={this.onChangeRouteNumber} maxLength={3}/>
                     </div>
                 </div>

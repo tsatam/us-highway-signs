@@ -9,7 +9,7 @@
 
 .display {
     grid-area: display;
-    background-color: #090;
+    background-color: #009140;
 }
 
 .displayInner {
@@ -24,7 +24,7 @@
 
 .sidebar {
     grid-area: sidebar;
-    background-color: #00f;
+    background-color: #007dc2;
     color: #fff;
     font-size: 18px;
 }
@@ -45,6 +45,12 @@
 
 .sidebarElement > span {
     margin-bottom: 10px;
+}
+
+.signText {
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: #fff;
 }
 
 @media only screen and (max-width: 600px) {
