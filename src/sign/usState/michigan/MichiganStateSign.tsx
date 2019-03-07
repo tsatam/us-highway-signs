@@ -4,45 +4,43 @@ import React from 'react';
 import styles from './MichiganStateSign.module.css';
 
 export function MichiganStateSign(props: Props) {
-    return <svg className={styles.sign} viewBox={'-500 -500 1000 1000'}>
-        <rect className={styles.backdrop} x="-500" y="-500" width="1000" height="1000" rx="150" ry="150"/>
+    return <svg className={styles.sign} viewBox={'-512 -512 1024 1024'}>
+        <rect className={styles.backdrop} x="-512" y="-512" width="1024" height="1024" rx="64" ry="64"/>
         <rect className={styles.diamond}
-              x="-340"
-              y="-340"
-              width="680"
-              height="680"
-              rx="10"
-              ry="10"
+              x="-346"
+              y="-346"
+              width="686"
+              height="686"
         />
 
         <path
             className={styles.blockM}
             d="M 0,0
-            m 0,-190
-            48,-48
+            m 0,-210
+            52,-52
+            0,60
+            -15,0
             0,40
-            -20,0
-            0,40
-            88,0
+            64,0
             0,-40
-            -20,0
+            -15,0
             0,-72
-            20,0
+            15,0
             0,-40
-            -68, 0
-            -48,48
-            -48,-48
-            -68,0
+            -50, 0
+            -52,52
+            -52,-52
+            -50,0
             0,40
-            20,0
+            15,0
             0,72
-            -20,0
+            -15,0
             0,40
-            88,0
+            64,0
             0,-40
-            -20,0
-            0,-40
-            48,48
+            -15,0
+            0,-60
+            52,52
             z"
         />
 
