@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/us-highway-signs/precache-manifest.d5b534d6aff0b10f8a13fe305407e049.js"
+  "/us-highway-signs/precache-manifest.da05b85326fd5583a5a0f85fcb292352.js"
 );
 
 workbox.clientsClaim();
