@@ -45,7 +45,7 @@ export function MichiganStateSign(props: Props) {
         />
 
         <text
-            className={props.routeNumber.length > 2 ? styles.text3Digit : undefined}
+            className={`${styles.text} ${props.routeNumber.length > 2 ? styles.text3Digit : undefined}`}
             textAnchor="middle"
             dominantBaseline="middle"
             x="0"

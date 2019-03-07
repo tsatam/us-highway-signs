@@ -17,11 +17,11 @@
     stroke-width: 0;
 }
 
-.sign > text {
+.text {
     text-anchor: middle;
     dominant-baseline: middle;
     font-size: 450px;
-    font-weight: 700;
+    font-weight: 600;
     fill: black;
 }
 
