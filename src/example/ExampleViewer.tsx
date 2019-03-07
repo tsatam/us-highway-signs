@@ -16,13 +16,14 @@ export class ExampleViewer extends React.Component<{}, State> {
     state = {
         system: HighwaySystem.INTERSTATE,
         state: undefined,
-        routeNumber: '14'
+        routeNumber: ''
     };
 
     constructor(props: Readonly<{}>) {
         super(props);
 
         this.onChangeSystem = this.onChangeSystem.bind(this);
+        this.onChangeState = this.onChangeState.bind(this);
         this.onChangeRouteNumber = this.onChangeRouteNumber.bind(this);
     }
 
@@ -30,7 +31,7 @@ export class ExampleViewer extends React.Component<{}, State> {
         return <div className={styles.exampleSign}>
             <div className={styles.display}>
                 <div className={styles.displayInner}>
-                    <Sign system={this.state.system} routeNumber={this.state.routeNumber}/>
+                    <Sign system={this.state.system} routeNumber={this.state.routeNumber} state={this.state.state}/>
                 </div>
             </div>
             <div className={styles.sidebar}>
@@ -48,13 +49,14 @@ export class ExampleViewer extends React.Component<{}, State> {
                         <div className={styles.sidebarElement}>
                             <span>State</span>
                             <select value={this.state.state} onChange={this.onChangeState}>
+                                <option value={undefined}>-</option>
                                 <option value={UsState.MICHIGAN}>Michigan</option>
                             </select>
                         </div>
                     }
                     <div className={styles.sidebarElement}>
                         <span>Route Number</span>
-                        <input value={this.state.routeNumber} onChange={this.onChangeRouteNumber}/>
+                        <input value={this.state.routeNumber} onChange={this.onChangeRouteNumber} maxLength={3}/>
                     </div>
                 </div>
             </div>

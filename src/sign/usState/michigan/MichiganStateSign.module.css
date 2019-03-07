@@ -1,0 +1,30 @@
+.sign {
+    font-weight: 600;
+    height: 100%;
+}
+
+.backdrop {
+    fill: #000;
+}
+
+.diamond {
+    fill: #fff;
+    transform: rotate(45deg);
+}
+
+.blockM {
+    fill: #000;
+    stroke-width: 0;
+}
+
+.sign > text {
+    text-anchor: middle;
+    dominant-baseline: middle;
+    font-size: 450px;
+    font-weight: 700;
+    fill: black;
+}
+
+.text3Digit {
+    transform: scaleX(0.7);
+}
