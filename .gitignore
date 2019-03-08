@@ -2,10 +2,14 @@
 
 # dependencies
 /node_modules
+example/node_modules
+dist
+example/build
 /.pnp
 .pnp.js
 
 .idea
+.directory
 
 # testing
 /coverage

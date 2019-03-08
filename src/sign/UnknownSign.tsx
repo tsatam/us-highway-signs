@@ -1,6 +1,6 @@
+import * as React from 'react';
 import {Props} from './Props';
 import styles from './UnknownSign.module.css';
-import React from 'react';
 
 export function UnknownSign(props: Props) {
     return <svg className={styles.sign} viewBox={'-512 -512 1024 1024'}>

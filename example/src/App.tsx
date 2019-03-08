@@ -1,5 +1,5 @@
-import React from 'react';
-import {ExampleViewer} from './example/ExampleViewer';
+import * as React from 'react';
+import {ExampleViewer} from './ExampleViewer';
 
 class App extends React.Component {
   render() {

@@ -1,10 +1,8 @@
 import React, {ChangeEvent} from 'react';
 
-import {HighwaySystem} from '../model/HighwaySystem';
+import Sign, {HighwaySystem, UsState} from 'us-highway-signs';
 
 import styles from './ExampleViewer.module.css';
-import {Sign} from '../sign/Sign';
-import {UsState} from '../model/UsState';
 
 interface State {
     system: HighwaySystem

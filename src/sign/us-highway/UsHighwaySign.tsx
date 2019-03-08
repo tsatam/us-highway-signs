@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 
 import {Props} from '../Props';
 
@@ -10,8 +10,6 @@ export function UsHighwaySign(props: Props) {
     const
         A = is3Digit ? 60 : 48,
         B = 48,
-        C = 11,
-        D = 24,
         E = 13,
         F = is3Digit ? 8 : 2,
         G = 11,
