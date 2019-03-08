@@ -1,5 +1,6 @@
-import {Props} from '../../Props';
 import React from 'react';
+
+import {Props} from '../../Props';
 
 import styles from './MichiganStateSign.module.css';
 

@@ -1,6 +1,5 @@
 .signWrapper {
-    width: 128px;
-    height: 128px;
+    height: 100%;
     padding: 30px;
     display: flex;
     align-items: center;

@@ -31,7 +31,9 @@ export class ExampleViewer extends React.Component<{}, State> {
         return <div className={styles.exampleSign}>
             <div className={styles.display}>
                 <div className={styles.displayInner}>
-                    <Sign system={this.state.system} routeNumber={this.state.routeNumber} state={this.state.state}/>
+                    <div className={styles.signContainer}>
+                        <Sign system={this.state.system} routeNumber={this.state.routeNumber} state={this.state.state}/>
+                    </div>
                 </div>
             </div>
             <div className={styles.sidebar}>

@@ -1,0 +1,25 @@
+.sign {
+    font-weight: 600;
+    height: 100%;
+}
+
+.backdrop {
+    fill: #000;
+}
+
+.shield {
+    fill: #fff;
+    stroke-width: 0;
+}
+
+.text {
+    text-anchor: middle;
+    dominant-baseline: text-after-edge;
+    font-size: 28px;
+    font-weight: 600;
+    fill: black;
+}
+
+.text3Digit {
+    transform: scaleX(0.7);
+}
