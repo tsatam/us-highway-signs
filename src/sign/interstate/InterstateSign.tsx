@@ -60,10 +60,10 @@ export function InterstateSign(props: Props) {
         <g className={styles.shieldOuter}>
             {Shield(B, H, N, J)}
         </g>
-        <g className={styles.shieldInnerBlue} clipPath="url(#shieldInnerBlueClip)">
+        <g className={`${styles.shieldInnerBlue} ${is3Digit ? styles.shieldInner3Digit : ''}`} clipPath="url(#shieldInnerBlueClip)">
             {Shield(B, H, N, J)}
         </g>
-        <g className={styles.shieldInnerRed} clipPath="url(#shieldInnerRedClip)">
+        <g className={`${styles.shieldInnerRed} ${is3Digit ? styles.shieldInner3Digit : ''}`} clipPath="url(#shieldInnerRedClip)">
             {Shield(B, H, N, J)}
         </g>
 

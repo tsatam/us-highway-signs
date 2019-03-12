@@ -19,6 +19,10 @@
     transform: scale(0.9583, 0.9583);
 }
 
+.shieldInner3Digit {
+    transform: scale(0.9667, 0.9583)
+}
+
 .interstateLabel {
     text-anchor: middle;
     dominant-baseline: text-before-edge;
