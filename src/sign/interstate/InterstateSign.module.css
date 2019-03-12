@@ -1,0 +1,41 @@
+.sign {
+    font-weight: 600;
+    height: 100%;
+}
+
+.shieldOuter {
+    fill: #fff;
+    stroke-width: 0;
+    outline: 1px solid #000;
+}
+
+.shieldInnerBlue {
+    fill: #007dc2;
+    transform: scale(0.9583, 0.9583);
+}
+
+.shieldInnerRed {
+    fill: #d9261c;
+    transform: scale(0.9583, 0.9583);
+}
+
+.interstateLabel {
+    text-anchor: middle;
+    dominant-baseline: text-before-edge;
+    fill: #fff;
+    font-size: 7px;
+    font-weight: 600;
+    transform: scaleX(0.75);
+}
+
+.text {
+    text-anchor: middle;
+    dominant-baseline: text-before-edge;
+    font-size: 28px;
+    font-weight: 600;
+    fill: #fff;
+}
+
+.text3Digit {
+    transform: scaleX(0.75);
+}

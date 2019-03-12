@@ -6,9 +6,13 @@ import {HighwaySystem} from '../model/HighwaySystem';
 import {UnknownSign} from './UnknownSign';
 import {UsStateSign} from './state/UsStateSign';
 import {UsHighwaySign} from './us-highway/UsHighwaySign';
+import {InterstateSign} from './interstate/InterstateSign';
 
 function RenderSign(props: Props) {
     switch (props.system) {
+        case HighwaySystem.INTERSTATE: {
+            return <InterstateSign {...props}/>;
+        }
         case HighwaySystem.US_HIGHWAY: {
             return <UsHighwaySign {...props}/>;
         }

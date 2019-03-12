@@ -9,6 +9,7 @@
 
 .display {
     grid-area: display;
+    min-height: 384px;
     background-color: #009140;
 }
 
@@ -60,7 +61,7 @@
 @media only screen and (max-width: 600px) {
     .exampleSign {
         grid-template-columns: 1fr;
-        grid-template-rows: auto 1fr;
+        grid-template-rows: 1fr fit-content(200px);
         grid-template-areas: "display" "sidebar";
     }
 

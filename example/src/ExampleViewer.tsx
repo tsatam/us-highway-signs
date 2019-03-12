@@ -14,7 +14,7 @@ export class ExampleViewer extends React.Component<{}, State> {
     state = {
         system: HighwaySystem.INTERSTATE,
         state: undefined,
-        routeNumber: ''
+        routeNumber: '1'
     };
 
     constructor(props: Readonly<{}>) {
