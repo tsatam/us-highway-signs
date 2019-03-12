@@ -1,13 +1,9 @@
 # us-highway-signs
 
-> US Highway Signs
-
-[![NPM](https://img.shields.io/npm/v/us-highway-signs.svg)](https://www.npmjs.com/package/us-highway-signs) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
-
 ## Install
 
 ```bash
-npm install --save us-highway-signs
+npm install --save tsatam/us-highway-signs
 ```
 
 ## Usage
@@ -15,12 +11,12 @@ npm install --save us-highway-signs
 ```tsx
 import * as React from 'react'
 
-import MyComponent from 'us-highway-signs'
+import Sign, {HighwaySystem, UsState} from 'us-highway-signs';
 
 class Example extends React.Component {
   render () {
     return (
-      <MyComponent />
+      <Sign system={HighwaySystem.STATE} state={UsState.MICHIGAN} routeNumber={14}/>
     )
   }
 }
