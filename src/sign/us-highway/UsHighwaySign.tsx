@@ -45,6 +45,7 @@ export function UsHighwaySign(props: Props) {
                     a ${E} ${E} 0 0 1 ${-E} ${E}
                     l ${-F} 0
                     A ${G} ${G} 0 0 0 0 ${(B / 2) - N}
+                    l ${-1} ${-1}
                     z`}
             />
             <path

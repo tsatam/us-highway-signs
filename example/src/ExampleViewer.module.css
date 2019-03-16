@@ -52,6 +52,12 @@
     margin-bottom: 10px;
 }
 
+.input {
+    padding: 5px;
+    font-size: 14px;
+    font-family: 'Overpass', sans-serif;
+}
+
 .signText {
     font-weight: 600;
     font-size: 1.4rem;

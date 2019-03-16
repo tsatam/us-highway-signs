@@ -38,7 +38,7 @@ export class ExampleViewer extends React.Component<{}, State> {
                 <div className={styles.sidebarInner}>
                     <div className={styles.sidebarElement}>
                         <span className={styles.signText}>HIGHWAY SYSTEM</span>
-                        <select value={this.state.system} onChange={this.onChangeSystem}>
+                        <select className={styles.input} value={this.state.system} onChange={this.onChangeSystem}>
                             <option value={HighwaySystem.INTERSTATE}>Interstate</option>
                             <option value={HighwaySystem.US_HIGHWAY}>U.S. Highway</option>
                             <option value={HighwaySystem.STATE}>State</option>
@@ -48,7 +48,7 @@ export class ExampleViewer extends React.Component<{}, State> {
                         this.state.system === HighwaySystem.STATE &&
                         <div className={styles.sidebarElement}>
                             <span className={styles.signText}>STATE</span>
-                            <select value={this.state.state} onChange={this.onChangeState}>
+                            <select className={styles.input} value={this.state.state} onChange={this.onChangeState}>
                                 <option value={undefined}>-</option>
                                 <option value={UsState.MICHIGAN}>Michigan</option>
                             </select>
@@ -56,7 +56,7 @@ export class ExampleViewer extends React.Component<{}, State> {
                     }
                     <div className={styles.sidebarElement}>
                         <span className={styles.signText}>ROUTE NUMBER</span>
-                        <input value={this.state.routeNumber} onChange={this.onChangeRouteNumber} maxLength={3}/>
+                        <input className={styles.input} value={this.state.routeNumber} onChange={this.onChangeRouteNumber} maxLength={3}/>
                     </div>
                 </div>
             </div>
@@ -72,6 +72,6 @@ export class ExampleViewer extends React.Component<{}, State> {
     }
 
     private onChangeRouteNumber(event: ChangeEvent<HTMLInputElement>) {
-        this.setState({routeNumber: event.target.value});
+        this.setState({routeNumber: event.target.value.substr(0, 3)});
     }
 }

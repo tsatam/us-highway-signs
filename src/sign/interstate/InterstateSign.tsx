@@ -9,12 +9,14 @@ function Shield(B: number, H: number, N: number, J: number) {
             d={`M 0 ${B / -2}
                 a ${H} ${H} 0 0 0 ${N} 0
                 A ${J} ${J} 0 0 1 0 ${B / 2}
+                l ${-0.1} ${-0.1}
                 z`}
         />
         <path
             d={`M 0 ${B / -2}
                 a ${H} ${H} 0 0 1 ${-N} 0
                 A ${J} ${J} 0 0 0 0 ${B / 2}
+                l ${0.1} ${-0.1}
                 z`}
         />
     </>;
