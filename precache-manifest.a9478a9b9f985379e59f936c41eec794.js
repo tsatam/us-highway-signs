@@ -100,10 +100,6 @@ self.__precacheManifest = [
     "url": "/us-highway-signs/static/media/overpass-latin-600italic.0e9af73d.woff"
   },
   {
-    "revision": "277907d5b298c856073c97be8e8d61ff",
-    "url": "/us-highway-signs/static/media/overpass-latin-700.277907d5.woff2"
-  },
-  {
     "revision": "6f670b93cf45ccff17b6f85e21d3cffd",
     "url": "/us-highway-signs/static/media/overpass-latin-700.6f670b93.woff"
   },
@@ -118,6 +114,10 @@ self.__precacheManifest = [
   {
     "revision": "df036522558122a0a5cd67d99494080e",
     "url": "/us-highway-signs/static/media/overpass-latin-800.df036522.woff2"
+  },
+  {
+    "revision": "277907d5b298c856073c97be8e8d61ff",
+    "url": "/us-highway-signs/static/media/overpass-latin-700.277907d5.woff2"
   },
   {
     "revision": "0f0af9701db3cb89414be93c5b0a4f25",
@@ -148,7 +148,7 @@ self.__precacheManifest = [
     "url": "/us-highway-signs/static/css/2.48d839c5.chunk.css"
   },
   {
-    "revision": "9160fe1162d9e807cc9934ddd947ec2f",
+    "revision": "8889f623d91da006de5a4a2b8a905ba7",
     "url": "/us-highway-signs/index.html"
   }
 ];
