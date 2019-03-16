@@ -17,8 +17,8 @@
     "us-highway-signs": "file:.."
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "REACT_APP_BUILD_TIME=`git log -1 --format=%cd` REACT_APP_GIT_SHA=`git rev-parse --short HEAD` react-scripts start",
+    "build": "REACT_APP_BUILD_TIME=`git log -1 --format=%cd` REACT_APP_GIT_SHA=`git rev-parse --short HEAD` react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },

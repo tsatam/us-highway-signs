@@ -36,31 +36,45 @@ export class ExampleViewer extends React.Component<{}, State> {
             </div>
             <div className={styles.sidebar}>
                 <div className={styles.sidebarInner}>
-                    <div className={styles.sidebarElement}>
-                        <span className={styles.signText}>HIGHWAY SYSTEM</span>
-                        <select className={styles.input} value={this.state.system} onChange={this.onChangeSystem}>
-                            <option value={HighwaySystem.INTERSTATE}>Interstate</option>
-                            <option value={HighwaySystem.US_HIGHWAY}>U.S. Highway</option>
-                            <option value={HighwaySystem.STATE}>State</option>
-                        </select>
-                    </div>
-                    {
-                        this.state.system === HighwaySystem.STATE &&
+                    <div className={styles.sidebarElements}>
                         <div className={styles.sidebarElement}>
-                            <span className={styles.signText}>STATE</span>
-                            <select className={styles.input} value={this.state.state} onChange={this.onChangeState}>
-                                <option value={undefined}>-</option>
-                                <option value={UsState.MICHIGAN}>Michigan</option>
+                            <span className={styles.signText}>HIGHWAY SYSTEM</span>
+                            <select className={styles.input} value={this.state.system} onChange={this.onChangeSystem}>
+                                <option value={HighwaySystem.INTERSTATE}>Interstate</option>
+                                <option value={HighwaySystem.US_HIGHWAY}>U.S. Highway</option>
+                                <option value={HighwaySystem.STATE}>State</option>
                             </select>
                         </div>
-                    }
-                    <div className={styles.sidebarElement}>
-                        <span className={styles.signText}>ROUTE NUMBER</span>
-                        <input className={styles.input} value={this.state.routeNumber} onChange={this.onChangeRouteNumber} maxLength={3}/>
+                        {
+                            this.state.system === HighwaySystem.STATE &&
+                            <div className={styles.sidebarElement}>
+                                <span className={styles.signText}>STATE</span>
+                                <select className={styles.input} value={this.state.state} onChange={this.onChangeState}>
+                                    <option value={undefined}>-</option>
+                                    <option value={UsState.MICHIGAN}>Michigan</option>
+                                </select>
+                            </div>
+                        }
+                        <div className={styles.sidebarElement}>
+                            <span className={styles.signText}>ROUTE NUMBER</span>
+                            <input className={styles.input} value={this.state.routeNumber}
+                                   onChange={this.onChangeRouteNumber} maxLength={3}/>
+                        </div>
                     </div>
+                    <span className={styles.rev}>build {this.getRevisionSha()} - {this.getBuildTime()}</span>
                 </div>
             </div>
         </div>;
+    }
+
+    private getRevisionSha() {
+        const uiVersion = document.querySelector<HTMLMetaElement>('meta[name="ui-version"]');
+        return uiVersion ? uiVersion.content : '';
+    }
+
+    private getBuildTime() {
+        const buildTime = document.querySelector<HTMLMetaElement>('meta[name="build-time"]');
+        return buildTime ? buildTime.content : '';
     }
 
     private onChangeSystem(event: ChangeEvent<HTMLSelectElement>) {
